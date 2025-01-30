@@ -1,0 +1,135 @@
+// Define color variables using new palette
+$color1: #ffcbcb;
+$color2: #ffb5b5;
+$color3: #407088;
+$color4: #132743;
+
+.bestsellers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+    //background-color: $color1;
+  
+    .book-card {
+      background: $color2;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba($color4, 0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.2s ease-in-out;
+      width: 100%;
+      max-width: 250px;
+      border-color: black;
+  
+      &:hover {
+        transform: translateY(-5px);
+      }
+  
+      a {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+        padding: 15px;
+      }
+  
+      img {
+        width: 100%;
+        height: auto;
+        border-bottom: 2px solid $color3;
+      }
+  
+      h3 {
+        font-size: 1rem;
+        margin: 10px 0;
+        color: $color4;
+      }
+  
+      .author {
+        font-size: 0.875rem;
+        color: $color3;
+      }
+    }
+}
+
+.loading, .error {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 20px;
+    color: $color4;
+}
+
+.details-page {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    text-align: left;
+  
+    .back-link {
+      display: block;
+      margin-bottom: 15px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 1.1rem;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  
+    .book-details {
+      gap: 20px;
+  
+      img {
+        width: 200px;
+        border-radius: 8px;
+      }
+  
+      .details-content {
+        flex: 1;
+  
+        h1 {
+          font-size: 1.8rem;
+          margin-bottom: 10px;
+        }
+  
+        .authors {
+          font-size: 1.2rem;
+          color: white;
+          margin-bottom: 15px;
+        }
+  
+        .description {
+          font-size: 1rem;
+          line-height: 1.5;
+          color: white;
+          margin-bottom: 15px;
+        }
+  
+        .meta-info {
+          font-size: 0.9rem;
+          color: grey;
+  
+          a {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+  
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  
+
+
+  
