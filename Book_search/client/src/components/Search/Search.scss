@@ -1,0 +1,27 @@
+.search{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    // left:25%;
+    margin-left:3rem;
+    &__input{
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 0.5rem 1rem;
+        width: 300px;
+        font-size: 1rem;
+        outline: none;
+    }  
+    &__button{
+        background-color: #007bff;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+        font-size: 1rem;
+        margin-left: 1rem;
+        padding: 0.5rem 1rem;
+    } 
+}
